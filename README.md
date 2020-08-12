@@ -5,7 +5,7 @@ Completed web scraping (week 12) homework for Monash University Data Analytics B
 Goal is to build a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
 
 Folder structure include - 
-* ***Mission_to_Mars*** folder containing
+* **Mission_to_Mars** folder containing
     * ***mission_to_mars.ipynb***  - jupyter notebook containing scraping tasks, ie.
         * scrape *[NASA Mars News Site](https://mars.nasa.gov/news/)* for latest news title and paragraph text
         * scrape *[JPL](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars)* for its featured space image
