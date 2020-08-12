@@ -13,5 +13,6 @@ Folder structure include -
         * scrape the *[USGS Astrogeology site](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)* for high resolution images of Mars' hemispheres
     * ***scrape_mars.py*** - script to scrape the above sites for the relevant data
     * ***app.py*** - Flask API to launch html file for Mission to Mars
+    * ***screenshot1.jpg*** and *** screenshot2.jpg*** of expected html page
     * ***static*** folder containing css stylesheet for HTML page
     * ***templates*** folder containing template *index.html* file
