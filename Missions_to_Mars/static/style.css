@@ -1,0 +1,22 @@
+img {
+    width:100%;
+}
+h3,h5 {
+    font-weight:bold;
+}
+.col-8,.container {
+    border-left:0;
+    padding-left:0;
+    margin-left:0;
+}
+.hemi {
+    text-align:center;
+}
+table {
+    border:1px solid black;
+}
+.hemi_fig {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    border:1px solid lightgrey;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mars Data</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron text-center">
+                <h1>Mission to Mars</h1>
+                <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+            </div>
+            <h3>Latest Mars News</h3>
+            <h5>{{mars.mars_news_title}}</h5>
+            <p>{{mars.mars_news_p}}</p>
+            <hr>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-7">
+                        <h3>Featured Mars Image</h3>
+                        <img src="{{mars.mars_feature_image}}" alt="mars_image">
+                    </div>
+                    <div class="col-5">
+                        <h5>Mars Facts</h5>
+                        <div class="table-responsive">
+                            {{mars.mars_facts_table|safe}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3 class="hemi">Mars Hemispheres</h3>
+            <hr>
+            <div class="container">
+                <div class="row justify-content-center">
+                    {% for i in range(4) %}
+                    <div class="col-5 hemi_fig">
+                        <figure>
+                            <img src="{{mars.mars_hemi_url[i].img_url}}">
+                            <figcaption><h5>{{mars.mars_hemi_url[i].title}}</h5></figcaption>
+                        </figure>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
